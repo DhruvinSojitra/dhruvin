@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap.css"rel="stylesheet"></link> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+    #f1{
+        margin-top:40px ;
+        margin-bottom: 40px;
+        box-shadow: 0ox 0px 3px gray;
+        background-color: rgb(199, 192, 183);
+    }
+    i.fa,b{
+        color: teal;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-4 col-sm-4 col-sm-offset-4 col-lg-3 col-lg offset-4 " id="f1">
+                <div class="text-center"><h3><i class="fa fa-user"></i>create a new user</h3>  
+                </div><br>
+                <div class="from group"><b>First Name</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" id="TxtFirstname"maxlenght="20" placeholder="Enter Your FirstName"
+                        class="form-control">
+                        </div>
+                        <small id="TxtfirstNameValidate"class="text-danger"></small>
+            </div>
+            <div class="from group"><b>Last Name</b>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" id="Txtlastname"maxlenght="20" placeholder="Enter Your lastname0"class="form-control">
+                    </div>
+                    <small id="TxtlastNameValidate"class="text-danger"></small>
+
+        </div>
+        <div class="from group"><b>Contect:</b>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-phone"></i>
+                </span>
+                <input type="text" id="Txtcontect"maxlenght="20" placeholder="Enter Your contect "class="form-control">
+                </div>
+                <small id="TxtcontectValidate"class="text-danger"></small>
+    </div>
+    <div class="from group"><b>Gender:</b>
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="fa fa-male"></i>|<i class="fa fa-female"></i>
+            </span><select class="form-control"id="DDL-Genderator">
+            <option value="f">Female</option>
+            <option value="m">Male</option>
+            </select>
+        </div>
+</div>
+<div class="from group"><b>Email-id:</b>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="fa fa-envelope"></i>
+        </span>
+        <input type="text" id="TxtEmail"maxlenght="20" placeholder="Enter Your Email-id "class="form-control">
+        </div>
+        <small id="TxtE-mailValidate"class="text-danger"></small>
+</div>
+<div class="from group"><b>Password:</b>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="fa fa-key"></i>
+        </span>
+        <input type="password" id="TxtPassword"maxlenght="20" placeholder="Enter Your Password "class="form-control">
+        </div>
+        <small id="TxtpasswordValidate"class="text-danger"></small>
+</div>
+<div class="form-group">
+    <a id="btncreateNewAccount" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 20px;">
+        <i class="fa fa-user-plus" style="color: #ffffff;"></i>Create a Account:
+    </a>
+</div>
+
+
+            </div>
+        </div>
+
+            </div>
+    
+    
+</body>
+</html>
