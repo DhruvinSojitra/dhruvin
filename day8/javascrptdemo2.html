@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script type="text/javascript">
+        function demoInternalAlert()
+        {
+            alert("Internal confirm")
+        }
+        function demoInternalConfirm()
+        {
+            if(confirm("Are you sure")){
+                alert("yess!");
+            }
+            else
+            {
+                alert("no");
+            }
+        }
+        function demoInternalpromot()
+        {
+            var fname=prompt("enter the first name:");
+            var lname=prompt("enter the last name:");
+            alert(fname+" "+lname);
+
+        }
+    </script>
+    <script type="tect/javascript" src="1demo.js">
+    </script>
+    <style type="text/css">body{background-color: bisque;}div{background-color: aquamarine;height: 300px;width: 300px;}</style>
+    
+</head>
+<body>
+    <div id="d1">hello</div>
+
+    <input type="button"value="alert inline" onclick="alert('alert box')">
+    <input type="button"value="confirm inline" onclick="alert('are u sure')">
+    <input type="button"value="prompt inline" onclick="alert('enter your name')">
+    <hr>
+    <input type="button"value="alert internal" onclick="demoInternalAlert()">
+    <input type="button"value="confirm internal" onclick="demoInternalConfirm()">
+    <input type="button"value="prompt internal" onclick="demoInternalpromot()">
+    <hr>
+    <input type="button"value="alert external" onclick="demoInternalAlert()">
+    <input type="button"value="confirm external" onclick="demoInternalConfirm()">
+    <input type="button"value="prompt external" onclick="demoInternalpromot()">
+    <hr>
+    <button onclick=""></button>
+
+</body>
+</html>

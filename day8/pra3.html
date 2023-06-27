@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pra3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+    input[type=text], input[type=password]{
+        width: 100%;
+        padding: 12px 40px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid#ccc;
+        box-sizing: border-box;
+    }
+    button{
+        background-color: #4c504c;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    button:hover{
+        opacity:0.8;
+    }
+    .container{
+        padding: 80px;
+    }
+    .fontuser{position: relative;}
+    .fontuser i{position:absolute;left:15px;top:40;color: rgb(35, 15, 122);}
+    .fontpassword{position: relative;}
+     .fontpassword i{position:absolute;left:15px;top:40px;color:rgb(0, 0, 0);}
+
+
+    
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fontuser">
+            <label><B>User Name</B></label>
+            <input type="text" placeholder="EnterUsername" name="unname"required>
+            <i class="fa fa-user fa-lg"></i>
+        </div>
+        <div class="fontpassword">
+            <label><B>Password</B></label>
+            <input type="password" placeholder="Enter Password" name="psw"required>
+            <i class="fa fa-key fa-lg"></i>
+        </div>
+        <button type="sybmit">Login</button>
+        <input type="checkbox"chacked="chacked">remember me
+    </div>
+
+</body>
+</html>
