@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQuery widgets</title>
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+	<style type="text/css">
+		.ui-widget-header
+		{
+			background: lawngreen;
+			border: 1px solid gray;
+			color: #ffffff;
+			font-weight: bold;
+		}
+		.ui-widget-content
+		{
+			background: lawngreen;
+			border: 1px solid #dddddd;
+			color: #ffffff;
+		}
+		.myCls
+		{
+			background-color: #0000ff;
+			color: #ffffff;
+		}
+		#itStu
+		{
+			width: 200px;
+			height: 200px;
+			padding: 10px;
+			margin: 0px 5px 10px 0px;
+		}
+		#IT
+		{
+			width: 250px;
+			height: 250px;
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#itStu").draggable();
+			$("#IT").droppable(
+			{
+				accept: "#itStu",
+				drop: function(event, ui)
+				{
+					$(this).addClass("myCls").find("p").html("Done...")
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="itStu" class="ui-widget-content">
+		<p>Hi i am an IT student.</p>
+	</div>
+	<div id="IT" class="ui-widget-header">
+		<p>Hi this is this is this.</p>
+	</div>
+</body>
+</html>

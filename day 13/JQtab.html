@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQuery Tab</title>
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css" />
+    <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script> 
+    <script type="text/javascript">
+    	$(document).ready(function()
+    	{
+    		$("#MyTab").tabs();
+    	});
+    </script>
+    <style type="text/css">
+    	#MyTab
+    	{
+    		font-size: 14px;
+    	}
+    	#MyTab div,#MyTab p
+    	{
+    		background-color: #ffffff;
+    	}
+    	.ui-widget-header
+    	{
+    		background-color: #b9cd6d;
+    		border: 1px solid #b9cd6d;
+    		color: #ffffff;
+    		font-weight: bold;
+    	}
+    </style>
+</head>
+<body>
+	<div id="MyTab">
+		<ul>
+			<li><a href="#tab1">Tab 1</a></li>
+			<li><a href="#tab2">Tab 2</a></li>
+			<li><a href="#tab3">Tab 3</a></li>
+		</ul>
+		<div id="tab1">
+			<p>Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1</p>
+		</div>
+		<div id="tab2">
+			<p>Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2</p>
+		</div>
+		<div id="tab3">
+			<p>Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3</p>
+		</div>
+	</div>
+</body>
+</html>
